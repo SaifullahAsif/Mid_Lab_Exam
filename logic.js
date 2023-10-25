@@ -34,12 +34,12 @@ document.getElementById('submission').addEventListener('click', function(e) {
    });
 
 
-   const toggles = document.querySelectorAll('.faq-toggle')
+   const checker = document.querySelectorAll('.faq-toggle')
 
-   toggles.forEach(toggle => {
-       toggle.addEventListener('click', () => {
-           toggle.parentNode.classList.toggle('active');
-           if (checker.classList.contains("active")) {
+   checker.forEach(checker => {
+       checker.addEventListener('click', () => {
+           checker.parentNode.classList.toggle('active');
+           if (checker.classList.contains('active')) {
             checker.remove();
           }
        })
