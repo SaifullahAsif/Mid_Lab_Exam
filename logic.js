@@ -20,6 +20,8 @@ document.getElementById('submission').addEventListener('click', function(e) {
    
        const faqToggle = document.createElement('button');
        faqToggle.classList.add('faq-toggle');
+       faqToggle.classList.add('faq');
+       faqToggle.classList.add('faq-toggle');
        faqToggle.innerHTML = '<i class="fas fa-chevron-down"></i><i class="fas fa-times"></i>';
    
        newFaq.appendChild(faqTitle);
@@ -40,7 +42,7 @@ document.getElementById('submission').addEventListener('click', function(e) {
        checker.addEventListener('click', () => {
            checker.parentNode.classList.toggle('active');
            if (checker.classList.contains('active')) {
-            checker.remove();
+            checker.remove('faq');
           }
        })
    })
