@@ -8,10 +8,13 @@
     <title>FAQ</title>
   </head>
   <body>
-    <div class="asking">
-        <input id="ask" type="text" placeholder="Enter any questions">
-        
-    </div>
+    <form action="/action_page.php">
+        <label for="Question">Your question:</label>
+        <input type="text" id="Q_input" name="Q_input1"><br><br>
+        <label for="lname">Your answer:</label>
+        <input type="text" id="A_input" name="A_input1"><br><br>
+        <input id="submission" type="submit" value="Submit">
+      </form>
     <h1>Frequently Asked Questions</h1>
     <div class="faq-container">
       <div class="faq active">
@@ -81,6 +84,6 @@
         </button>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="logic.js"></script>
   </body>
 </html>
